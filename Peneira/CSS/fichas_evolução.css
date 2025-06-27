@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #e5f0ff;
+  color: #1a1a1a;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Barra lateral */
+.barra_lateral {
+  width: 220px;
+  background-color: #1f2a40;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.barra_lateral h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.barra_lateral ul {
+  list-style: none;
+}
+
+.barra_lateral ul li {
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.barra_lateral ul li.active,
+.barra_lateral ul li:hover {
+  background-color: #3a4a67;
+}
+
+.botoes-lateral {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.barra_lateral .logout-btn,
+.barra_lateral .voltar-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Barra topo */
+.barra_topo {
+  background-color: white;
+  padding: 20px 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.barra_topo h1 {
+  font-size: 24px;
+}
+
+/* Caixas evolução */
+.qnt_pacientes {
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caixas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 400px;
+}
