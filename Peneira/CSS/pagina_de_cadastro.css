@@ -16,6 +16,7 @@ body {
 }
 
 /*barra lateral*/
+
 .barra_lateral {
   width: 220px;
   background-color: #1f2a40;
@@ -23,6 +24,15 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
+}
+/* ...existing code... */
+.barra_lateral a {
+  color: #000; /* preto */
+  text-decoration: none;
+}
+
+.barra_lateral a:hover {
+  color: #333; /* tom mais escuro ao passar o mouse */
 }
 
 .barra_lateral h2 {
@@ -93,11 +103,6 @@ body {
   margin-bottom: 40px;
   width: 100%;
   max-width: 400px;
-}
-
-.caixas a{
-  text-decoration: none;
-  color: #1a1a1a;
 }
 
 .caixa {

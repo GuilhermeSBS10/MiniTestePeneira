@@ -43,6 +43,12 @@ body {
 }
 
 /* Inputs */
+
+#container a {
+  text-decoration: none;
+  color: #cbd5e1;
+}
+
 #container input {
   width: 100%;
   padding: 12px;
@@ -64,6 +70,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 /* Hover */

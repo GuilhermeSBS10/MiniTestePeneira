@@ -16,6 +16,7 @@ body {
 }
 
 /*barra lateral*/
+
 .barra_lateral {
   width: 220px;
   background-color: #1f2a40;
@@ -93,11 +94,6 @@ body {
   margin-bottom: 40px;
   width: 100%;
   max-width: 400px;
-}
-
-.caixas a{
-  text-decoration: none;
-  color: #1a1a1a;
 }
 
 .caixa {

@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login</title>
   <link rel="stylesheet" href="/Peneira/CSS/index.css" />
+
+  <style>
+    .erro {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -17,7 +25,11 @@
     <label for="senha">Password</label>
     <input type="password" id="senha" placeholder="••••••••" />
 
-    <button type="submit">Login</button>
+    <label for="CRM">CRM</label>
+    <input type="text" id="crm" placeholder="1234" maxlength="4" />
+    <span class="erro">* O CRM deve ter exatamente 4 números</span>
+
+    <button type="submit"><a href="/Peneira/HTML/dashboard.html">Login</a></button>
     <button type="button" class="btn-secundario">Cadastrar</button>
 
     <a href="esqueceu-senha.html" class="link">Esqueceu a Senha?</a>

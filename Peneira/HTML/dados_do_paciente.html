@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dados do Paciente</title>
+  <link rel="stylesheet" href="/Peneira/CSS/dados_do_paciente.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="barra_lateral">
+      <h2>Dashboard</h2>
+      <ul>
+        <li class="active">Pacientes</li>
+      </ul>
+      <button class="voltar-btn">⬅️ Voltar</button>
+      <button class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main">
+      <header class="barra_topo">
+        <h1>Paciente 1</h1>
+      </header>
+
+      <section class="qnt_pacientes">
+        <form class="caixas">
+          <input class="caixa" type="text" name="nome" value="Guilherme Emílio" placeholder="Nome" required>
+          <input class="caixa" type="number" name="idade" value="21" placeholder="Idade" required>
+          <input class="caixa" type="text" name="sexo" value="M" placeholder="Sexo" required>
+          <input class="caixa" type="date" name="data_nasc" value="2004-05-10" placeholder="Data de Nascimento" required>
+          <input class="caixa" type="text" name="peso" value="95kg" placeholder="Peso" required>
+          <input class="caixa" type="text" name="alergia" value="Rinite" placeholder="Alergia">
+          <input class="caixa" type="text" name="queixa" value="Dor de cabeca" placeholder="Queixa" required>
+          <button type="submit" class="botao_addAtendimento">Salvar Alterações</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

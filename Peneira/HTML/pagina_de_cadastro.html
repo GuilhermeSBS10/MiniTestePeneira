@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro do Paciente</title>
+  <link rel="stylesheet" href="/Peneira/CSS/pagina_de_cadastro.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Barra lateral -->
+<aside class="barra_lateral">
+  <h2>Dashboard</h2>
+  <ul>
+    <li class="active"><a href="index.html">Cadastro</a></li>
+    <li><a href="pacientes.html">Pacientes</a></li>
+    <li><a href="atendimentos.html">Atendimentos</a></li>
+    <!-- Adicione mais páginas conforme necessário -->
+  </ul>
+  <button class="voltar-btn">⬅️ Voltar</button>
+  <button class="logout-btn">Logout</button>
+</aside>
+    <!-- Conteúdo principal -->
+    <main class="main">
+      <header class="barra_topo">
+        <h1>Cadastro do Paciente</h1>
+      </header>
+
+      <section class="qnt_pacientes">
+        <form class="caixas">
+          <input class="caixa" type="text" name="nome" placeholder="Nome" required>
+          <input class="caixa" type="number" name="idade" placeholder="Idade" required>
+          <input class="caixa" type="text" name="sexo" placeholder="Sexo (M/F)" required>
+          <input class="caixa" type="date" name="data_nasc" placeholder="Data de Nascimento" required>
+          <input class="caixa" type="text" name="peso" placeholder="Peso (kg)" required>
+          <input class="caixa" type="text" name="atividade" placeholder="Atividade" required>
+          <input class="caixa" type="text" name="alergia" placeholder="Alergia (medicamentos ou substâncias)">
+          <textarea class="caixa" name="queixa" placeholder="Queixa (motivo da consulta)"></textarea>
+          <button type="submit" class="botao_addAtendimento">Salvar</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
