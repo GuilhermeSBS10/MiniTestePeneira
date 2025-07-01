@@ -126,3 +126,15 @@ body {
   cursor: pointer;
   font-weight: 600;
 }
+
+.logout-btn a,
+.botao_addAtendimento a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.botao_addAtendimento a {
+  display: block; /* garante que o link ocupe todo o botão */
+  width: 100%;
+  height: 100%;
+}

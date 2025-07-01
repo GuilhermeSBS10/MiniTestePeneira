@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dados do Paciente</title>
+  <title>Dados Do Paciente</title>
   <link rel="stylesheet" href="/Peneira/CSS/dados_do_paciente.css" />
 </head>
 <body>
@@ -11,10 +11,16 @@
     <aside class="barra_lateral">
       <h2>Dashboard</h2>
       <ul>
-        <li class="active">Pacientes</li>
+        <li class="active"><i class="icon">🧍‍♂️</i> Paciente 1</li>
+        <li><i class="icon">📋</i><a href="/Peneira/HTML/prescricao_basica.html"> Prescrição</a></li>
+        <li><i class="icon">📈</i><a href="/Peneira/HTML/evolocao.html"> Evolução</a></li>
       </ul>
-      <button class="voltar-btn">⬅️ Voltar</button>
-      <button class="logout-btn">Logout</button>
+      
+      <div class="bottom-buttons">
+        <button class="export-btn">Exportar</button>
+        <button class="back-btn"><a href="/Peneira/HTML/dashboard.html">⬅️ Voltar</a></button>
+        <button class="logout-btn"><a href="/Peneira/HTML/index.html">Logout</a></button>
+      </div>
     </aside>
 
     <main class="main">
@@ -22,17 +28,40 @@
         <h1>Paciente 1</h1>
       </header>
 
-      <section class="qnt_pacientes">
-        <form class="caixas">
-          <input class="caixa" type="text" name="nome" value="Guilherme Emílio" placeholder="Nome" required>
-          <input class="caixa" type="number" name="idade" value="21" placeholder="Idade" required>
-          <input class="caixa" type="text" name="sexo" value="M" placeholder="Sexo" required>
-          <input class="caixa" type="date" name="data_nasc" value="2004-05-10" placeholder="Data de Nascimento" required>
-          <input class="caixa" type="text" name="peso" value="95kg" placeholder="Peso" required>
-          <input class="caixa" type="text" name="alergia" value="Rinite" placeholder="Alergia">
-          <input class="caixa" type="text" name="queixa" value="Dor de cabeca" placeholder="Queixa" required>
-          <button type="submit" class="botao_addAtendimento">Salvar Alterações</button>
-        </form>
+      <section class="patient-form">
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              <input class="form-input" type="text" value="Guilherme Emilio" placeholder="Nome do paciente">
+            </div>
+
+            <div class="form-group">
+              <input class="form-input" type="number" value="21" placeholder="Idade">
+            </div>
+
+            <div class="form-group">
+              <input class="form-input" type="text" value="M" placeholder="Sexo">
+            </div>
+
+            <div class="form-group">
+              <input class="form-input" type="date" value="2004-05-10">
+            </div>
+
+            <div class="form-group">
+              <input class="form-input" type="text" value="95kg" placeholder="Peso">
+            </div>
+
+            <div class="form-group">
+              <input class="form-input" type="text" value="Rinite" placeholder="Diagnóstico">
+            </div>
+
+            <div class="form-group">
+              <input class="form-input" type="text" value="Dor de cabeça" placeholder="Sintomas">
+            </div>
+
+            <button type="submit" class="save-btn">Salvar Alterações</button>
+          </form>
+        </div>
       </section>
     </main>
   </div>

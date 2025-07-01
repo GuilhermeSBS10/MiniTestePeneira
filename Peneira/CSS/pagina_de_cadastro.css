@@ -15,8 +15,6 @@ body {
   height: 100vh;
 }
 
-/*barra lateral*/
-
 .barra_lateral {
   width: 220px;
   background-color: #1f2a40;
@@ -25,14 +23,14 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* ...existing code... */
+
 .barra_lateral a {
-  color: #000; /* preto */
+  color: #fff;
   text-decoration: none;
 }
 
 .barra_lateral a:hover {
-  color: #333; /* tom mais escuro ao passar o mouse */
+  color: #ccc;
 }
 
 .barra_lateral h2 {
@@ -59,7 +57,6 @@ body {
 }
 
 .barra_lateral .logout-btn {
-  margin-top: auto;
   background-color: #3b82f6;
   color: white;
   padding: 10px 0;
@@ -69,14 +66,25 @@ body {
   width: 100%;
 }
 
-/*main*/
+.barra_lateral .back-btn {
+  margin-top: auto;
+  background-color: #6b7280;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
 .main {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/*barra no topo*/
 .barra_topo {
   background-color: white;
   padding: 20px 24px;
@@ -87,7 +95,6 @@ body {
   font-size: 24px;
 }
 
-/*caixas da indicando os pacientes*/
 .qnt_pacientes {
   padding: 40px;
   flex: 1;
@@ -107,21 +114,20 @@ body {
 
 .caixa {
   background-color: white;
-  border: none;              
+  border: none;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   text-align: center;
   font-weight: 600;
   width: 100%;
-  cursor: pointer;           
+  cursor: pointer;
 }
 
 .caixa:hover {
   background-color: #f0f0f0;
 }
 
-/*botao de add atendimento*/
 .botao_addAtendimento {
   background-color: #3b82f6;
   color: white;
@@ -130,4 +136,14 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+}
+
+.back-btn a,
+.logout-btn a,
+.botao_addAtendimento a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
 }

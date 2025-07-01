@@ -26,6 +26,19 @@ body {
   flex-direction: column;
 }
 
+.barra_lateral .back-btn {
+  margin-top: 550px;
+  background-color: #6b7280;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
 .barra_lateral h2 {
   font-size: 20px;
   margin-bottom: 20px;

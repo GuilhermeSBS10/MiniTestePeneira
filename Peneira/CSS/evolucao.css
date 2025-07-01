@@ -57,13 +57,17 @@ body {
 
 .barra_lateral .logout-btn,
 .barra_lateral .voltar-btn {
-  background-color: #3b82f6;
+  background-color: #6b7280;
   color: white;
   padding: 10px 0;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   width: 100%;
+}
+
+.barra_lateral .logout-btn{
+  background-color: #3b82f6;
 }
 
 /* Main */
